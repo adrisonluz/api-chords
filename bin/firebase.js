@@ -8,5 +8,5 @@ firebase.initializeApp({
   databaseURL: process.env.FB_DATABASE_URL
 });
 
-const database = firebase.database();
+const database = firebase.database().ref('notes');
 module.exports = database;
